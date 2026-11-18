@@ -4,5 +4,5 @@ Welcome to my personal portfolio—a showcase of my journey in software developm
 
 ## 🌐 Live Demo
 
-Portfolio: [https://vibinsonraj.in](https://vercel.com/vibinson-raj-g-s-projects/vercel-app)
+Portfolio: [https://vibinsonraj.in]([https://vercel-app-zeta-vert.vercel.app/])
 
