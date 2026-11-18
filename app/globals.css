@@ -1,36 +1,35 @@
+
 @import "tailwindcss";
 
-
-body{
-    opacity:1;
+body {
+    opacity: 1;
+    position: relative;
+    min-height: 100vh;
+    background: #ffffff;
+    color: #111827;
+    isolation: isolate;
 }
 
-body::before{
-    content:"";
-    position:fixed;
-    inset:0;
-    pointer-events:none;
+/* Irregular Connected Network Pattern */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
 
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='49' viewBox='0 0 56 49'%3E%3Cg fill='none' stroke='%23cbd5e1' stroke-width='1'%3E%3Cpath d='M14 1l14 8v16l-14 8L0 25V9z'/%3E%3Cpath d='M42 1l14 8v16l-14 8-14-8V9z'/%3E%3Cpath d='M28 25l14 8v16l-14 8-14-8V33z'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 600' preserveAspectRatio='xMidYMid slice'%3E%3Cg fill='none' stroke='%23cbd0d6' stroke-width='2.5' stroke-linejoin='round'%3E%3Cpath d='M0 30 L100 10 L210 65 L310 20 L420 75 L530 15 L640 70 L750 20 L870 75 L1000 10 M0 180 L100 110 L210 190 L310 130 L420 210 L530 120 L640 200 L750 125 L870 190 L1000 110 M0 330 L100 260 L210 350 L310 270 L420 360 L530 280 L640 350 L750 260 L870 350 L1000 270 M0 480 L100 410 L210 500 L310 420 L420 520 L530 420 L640 510 L750 430 L870 510 L1000 420 M0 600 L100 550 L210 600 L310 540 L420 600 L530 550 L640 600 L750 540 L870 600 L1000 550 M100 10 L100 110 L100 260 L100 410 L100 550 M210 65 L210 190 L210 350 L210 500 L210 600 M310 20 L310 130 L310 270 L310 420 L310 540 M420 75 L420 210 L420 360 L420 520 L420 600 M530 15 L530 120 L530 280 L530 420 L530 550 M640 70 L640 200 L640 350 L640 510 L640 600 M750 20 L750 125 L750 260 L750 430 L750 540 M870 75 L870 190 L870 350 L870 510 L870 600 M1000 10 L1000 110 L1000 270 L1000 420 L1000 550'/%3E%3Cpath d='M0 30 L100 110 L210 65 L310 130 L420 75 L530 120 L640 70 L750 125 L870 75 L1000 110 M0 180 L100 260 L210 190 L310 270 L420 210 L530 280 L640 200 L750 260 L870 190 L1000 270 M0 330 L100 410 L210 350 L310 420 L420 360 L530 420 L640 350 L750 430 L870 350 L1000 420 M0 480 L100 550 L210 500 L310 540 L420 520 L530 550 L640 510 L750 540 L870 510 L1000 550 M100 10 L210 190 L310 20 L420 210 L530 15 L640 200 L750 20 L870 190 L1000 10 M0 330 L210 500 L310 270 L530 420 L640 200 L870 350 L1000 110 M0 180 L210 65 L310 270 L530 120 L640 350 L870 75 L1000 270'/%3E%3C/g%3E%3Cg fill='%23cbd0d6'%3E%3Ccircle cx='100' cy='10' r='7'/%3E%3Ccircle cx='210' cy='65' r='8'/%3E%3Ccircle cx='310' cy='20' r='7'/%3E%3Ccircle cx='420' cy='75' r='8'/%3E%3Ccircle cx='530' cy='15' r='7'/%3E%3Ccircle cx='640' cy='70' r='8'/%3E%3Ccircle cx='750' cy='20' r='7'/%3E%3Ccircle cx='870' cy='75' r='8'/%3E%3Ccircle cx='100' cy='110' r='8'/%3E%3Ccircle cx='210' cy='190' r='8'/%3E%3Ccircle cx='310' cy='130' r='7'/%3E%3Ccircle cx='420' cy='210' r='8'/%3E%3Ccircle cx='530' cy='120' r='7'/%3E%3Ccircle cx='640' cy='200' r='8'/%3E%3Ccircle cx='750' cy='125' r='7'/%3E%3Ccircle cx='870' cy='190' r='8'/%3E%3Ccircle cx='100' cy='260' r='8'/%3E%3Ccircle cx='210' cy='350' r='9'/%3E%3Ccircle cx='310' cy='270' r='8'/%3E%3Ccircle cx='420' cy='360' r='8'/%3E%3Ccircle cx='530' cy='280' r='8'/%3E%3Ccircle cx='640' cy='350' r='8'/%3E%3Ccircle cx='750' cy='260' r='8'/%3E%3Ccircle cx='870' cy='350' r='8'/%3E%3Ccircle cx='100' cy='410' r='8'/%3E%3Ccircle cx='210' cy='500' r='8'/%3E%3Ccircle cx='310' cy='420' r='8'/%3E%3Ccircle cx='420' cy='520' r='8'/%3E%3Ccircle cx='530' cy='420' r='8'/%3E%3Ccircle cx='640' cy='510' r='8'/%3E%3Ccircle cx='750' cy='430' r='8'/%3E%3Ccircle cx='870' cy='510' r='8'/%3E%3C/g%3E%3C/svg%3E");
 
-    background-size:56px 49px;
-    opacity:.25;
+    background-repeat: repeat;
+    background-size: 1000px 600px;
+    opacity: 0.75;
 }
+
+/* Existing animation */
 @keyframes idswing {
-  0% {
-    transform: rotate(6deg);
-  }
-  25% {
-    transform: rotate(-1deg);
-  }
-  50% {
-    transform: rotate(-6deg);
-  }
-  75% {
-    transform: rotate(1deg);
-  }
-  100% {
-    transform: rotate(6deg);
-  }
+    0% { transform: rotate(6deg); }
+    25% { transform: rotate(-1deg); }
+    50% { transform: rotate(-6deg); }
+    75% { transform: rotate(1deg); }
+    100% { transform: rotate(6deg); }
 }
- 
